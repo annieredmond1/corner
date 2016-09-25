@@ -3,13 +3,48 @@ html {
 }
 body {
 	font-family: 'Roboto', sans-serif;
+	color: white;
 	min-height: 100%;
 	background-color: #3f3437;
+	margin-top: -50px !important;
+	margin-bottom: -500px !important;
+}
+
+.landing-page-wrapper {
+	width: 100%;
+	height: 100%;
+	background-image: url(http://i.imgur.com/b3kyKwo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 .landing-page-items {
-	margin: 20% 0;
+	margin: 15% 0;
 }
+
+.headerlp--landing-page {
+	margin-top: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.headerlp--supporters {
+	color: #b5afaf;
+	text-align: center;
+	float: right;
+	padding: 10px;
+	height: 10px;
+	width: 120px;
+}
+
+.headerlp--footer{
+	margin-bottom: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: right;
+}
+
 
 .logo {
 	color: black !important;
