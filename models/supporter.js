@@ -11,8 +11,9 @@ var SupporterSchema = new Schema ({
 	email: { type: String, unique: true, required: true},
 	tagline: { type: String, required: true},
 	experience: { type: String, required: true},
-	quote: { type: String, required: false},
-	resources: { type: String, required: false}
+	quote: { type: String, required: true},
+	hardship: { type: String, required: true},
+	encouragement: { type: String, required: true}
 });
 
 

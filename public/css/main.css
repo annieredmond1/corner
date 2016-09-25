@@ -4,18 +4,52 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	min-height: 100%;
+	background-color: #3f3437;
 }
 
 .landing-page-items {
 	margin: 20% 0;
 }
 
-.text__button--large {
+.logo {
+	color: black !important;
+	text-decoration: none !important;
 	font-size: 24px;
 }
 
-.text__button--small {
+.button__text--large {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.button__text--small {
 	font-size: 12px;
+}
+
+.button--landing-page {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 50px;
+	padding: 10px 30px;
+	margin-top: 40px;
+	color: black !important;
+	box-shadow: 1px 1px 1px black;
+}
+
+.container--header {
+	margin: 0;
+	background-color: grey;
+	width: 100%;
+}
+
+.row--header {
+	margin: 30px;
+}
+
+.header--supporters {
+	text-align: center;
+	margin: 50px auto;
+	max-width: 600px;
 }
 
 .back {
@@ -52,3 +86,27 @@ body {
 .contact-inputs {
 	margin-left: 200px;
 }
+
+.media {
+	box-shadow: 1px 1px 1px black;
+	margin: 25px !important;
+	padding: 10px;
+	background-color: #5e4e51;
+	border-radius: 5px;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
