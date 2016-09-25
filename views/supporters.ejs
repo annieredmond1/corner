@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<% include ./_head %>
+</head>
+<body>
+<% include ./_nav %>
+
+<% var supporter %>
+
+<div class="container">
+	<div class="panel panel-default">
+	  <div class="panel-body">
+	  	<div class="row">
+	  		<div class="col-sm-9">
+	  			<h2>CornerApp - Find safety in your storm</h2>
+	  		</div>
+	  		<div class="col-sm-2">
+	  			<a class="btn btn-default" href="/supporters/new" role="button">Become a Supporter</a>
+	  		</div>
+	  	</div>
+	  </div>
+	</div>
+</div>
+<div class="container">
+	<% for(var i = supporters.length - 1; i>=0; i--) { %>
+		<div class="media" role="button" id="<%=i%>">
+		  <div class="media-left media-top">
+		    <a href="">
+		      <img class="media-object profile-picture img-circle" src="<%=supporters[i].image_url%>" alt="">
+		    </a>
+		  </div>
+		  <div class="media-body">
+		    <p><%=supporters[i].tagline%></p>
+		    <p><%=supporters[i].quote%></p>
+		  </div>	
+		</div>
+		<div class="modal fade" id="detailsModal<%=i%>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <span class="glyphicon glyphicon-menu-left back-to-profile icon hidden" role="button"></span>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="profile-info"
+				     	<p>Some Information here<%=supporters[i].quote%></p>
+				     	<button class="btn btn-default center-block contact-me-button" type="button">Contact Me</button>
+				    </div>
+			      <div class="contact-form hidden">
+			      	<div class="container-fluid">
+			     			<form id="contactSupporterForm">
+			     				<div class="row picDetails">
+			     					<div class="pull-left">
+			     						<img src="<%=supporters[i].image_url%>" alt="" width="100" height="100" class="center-block" />
+			     					  <p class="help-block center-block">You are contacting <%=supporters[i].firstName%></p>
+			     					</div>
+			     					<div class="contact-inputs">
+			     						<div class="form-group">
+			     					    <label for="firstName">First Name</label>
+			     					    <input type="text" class="form-control" id="firstName" name="firstName">
+			     					  </div>
+			     					  <div class="form-group">
+			     					    <label for="email">Email address</label>
+			     					    <input type="email" class="form-control" id="email" name="email">
+			     					  </div>
+			     					</div>
+			     				</div>
+			     				<div class="row">
+			     					<div class="form-group">
+			     				    <label for="experience">What struggles are you going through.</label>
+			     				    <textarea type="text" class="form-control" id="experience" name="experience"></textarea> 
+			     				  </div>
+			     				</div>
+			     				<div class="row">
+			     					<div class="form-group">
+			     				    <label for="quotes">What prayers or guidance would you like?</label>
+			     				    <textarea type="text" class="form-control" id="quotes" name="quote"></textarea> 
+			     				  </div>
+			     				</div>
+			     				<div class="row formActions">
+			     		  		<button type="submit" class="btn btn-default center-block submit-contact-button">Submit</button>
+			     			  </div>
+			     			</form>
+			     		</div>
+			      </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<% } %>	
+</div>
+</body>
+</html>

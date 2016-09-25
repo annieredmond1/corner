@@ -1,7 +1,7 @@
 {
-  "name": "hackathon-starter",
+  "name": "corner",
   "version": "1.0.0",
-  "description": "Starter code for hackathon app",
+  "description": "Corner app for hackathon",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:kaylanb/Hackatholon_Prayer_Request.git"
+    "url": "git@github.com:annieredmond1/corner.git"
   },
   "keywords": [
     "node",

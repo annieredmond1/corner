@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 mongoose.connect(process.env.MONGOLAB_URI ||
                       process.env.MONGOHQ_URL || 
-                      'mongodb://localhost/hackatholon_prayer_request' );
+                      'mongodb://localhost/corner' );
 
 // After creating a new model, require and export it:
 // module.exports.Tweet = require("./tweet.js");
@@ -12,5 +12,5 @@ db.once('open', function (callback) {
   console.log("db is open for business");
 });
 
-module.exports.Group = require('./group.js');
+module.exports.Supporter = require('./supporter.js');
 
