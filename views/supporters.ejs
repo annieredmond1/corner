@@ -10,16 +10,16 @@
 <div class="container container--header">
 	<div class="row row--header">
 		<a class="logo pull-left" href="/" role="button">Corner</a>
-		<a class="btn btn-default pull-right" href="/supporters/new" role="button">Become a Supporter</a>
+		<a class="btn btn-default pull-right button__cta" href="/supporters/new" role="button">Become a Supporter</a>
 		<div class="header--supporters">
-			<h3>You are not alone.</h3>
+			<h1>You are not alone.</h1>
 			<h3>Dealing with a miscarriage is painful. Let others who have also dealt with a miscarriage come along side you.</h3>
 		</div>
 	</div>
 </div>
-<div class="container">
+<div class="container container-list">
 	<% for(var i = supporters.length - 1; i>=0; i--) { %>
-		<div class="media" role="button" id="<%=i%>">
+		<div class="media media--list-view" role="button" id="<%=i%>">
 		  <div class="media-left media-top">
 		    <a href="">
 		      <img class="media-object profile-picture img-circle" src="<%=supporters[i].image_url%>" alt="">
@@ -27,23 +27,39 @@
 		  </div>
 		  <div class="media-body">
 		    <p><%=supporters[i].tagline%></p>
-		    <p><%=supporters[i].quote%></p>
+		    <p class="quote"><%=supporters[i].quote%></p>
 		  </div>	
 		</div>
-		<div class="modal fade" id="detailsModal<%=i%>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade modal--details" id="detailsModal<%=i%>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
+		    <div class="modal-content container--modal">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		        <span class="glyphicon glyphicon-menu-left back-to-profile icon hidden" role="button"></span>
 		      </div>
 		      <div class="modal-body">
-		      	<div class="profile-info"
-				     	<p>Some Information here<%=supporters[i].quote%></p>
-				     	<button class="btn btn-default center-block contact-me-button" type="button">Contact Me</button>
+      			<a class="btn btn-default pull-right contact-me-button" role="button">Contact Me</a>
+		      	<div class="profile-info">
+		      		<div class="media" role="button" id="<%=i%>">
+      				  <div class="media-left media-top">
+      				    <a href="">
+      				      <img class="media-object profile-picture img-circle" src="<%=supporters[i].image_url%>" alt="">
+      				    </a>
+      				  </div>
+      				  <div class="media-body media-middle">
+      				    <p><%=supporters[i].tagline%></p>
+      				    <p class="quote"><%=supporters[i].quote%></p>
+      				  </div>	
+		      		</div>
+		      		<h3>What I experienced during my miscarriage</h3>
+				     	<p><%=supporters[i].experience%></p>
+				     	<h3>What made it hard</h3>
+				     	<p><%=supporters[i].experience%></p>
+				     	<h3>My encouragement to you</h3>
+				     	<p><%=supporters[i].experience%></p>
 				    </div>
 			      <div class="contact-form hidden">
-			      	<div class="container-fluid">
+			      	<div class="container__form">
 			     			<form id="contactSupporterForm">
 			     				<div class="row picDetails">
 			     					<div class="pull-left">

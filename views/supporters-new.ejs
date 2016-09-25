@@ -4,9 +4,8 @@
 	<% include ./_head %>
 </head>
 <body>
-<% include ./_nav %>
 
-<div class="container">
+<div class="container page-new-supporter">
 	<span class="glyphicon glyphicon-menu-left back-to-supporters back" role="button"></span>
 	<form class="container--form" id="createSupporterForm">
 		<div class="row picDetails">
@@ -19,7 +18,7 @@
 			    <p class="help-block">Enter image url.</p>
 			  </div>
 			</div>
-			<div class="pull-right">
+			<div class="col-xs-4">
 				<div class="form-group">
 			    <label for="firstName">First Name</label>
 			    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
@@ -36,6 +35,11 @@
 		    <input type="text" class="form-control" id="tagline" name="tagline"></textarea> 
 		    <p class="help-block">For Example: Married for 10 years, have 3 kids and 2 miscarriages and live in San Francisco.</p>
 		  </div>
+		<div class="row">
+			<div class="form-group">
+		    <label for="quotes">Favorite quote or scripture that helped you out?</label>
+		    <textarea type="text" class="form-control" id="quotes" name="quote"></textarea> 
+		  </div>
 		</div>
 		<div class="row">
 			<div class="form-group">
@@ -45,14 +49,14 @@
 		</div>
 		<div class="row">
 			<div class="form-group">
-		    <label for="quotes">Quotes and scriptures that helped you out?</label>
-		    <textarea type="text" class="form-control" id="quotes" name="quote"></textarea> 
+		    <label for="hardship">What made it hard?</label>
+		    <textarea type="text" class="form-control" id="hardship" name="hardship"></textarea> 
 		  </div>
 		</div>
 		<div class="row">
 			<div class="form-group">
-		    <label for="resources">What are some resources that helped you?</label>
-		    <textarea type="text" class="form-control" id="resources" name="resources"></textarea> 
+		    <label for="encouragement">What's your encouragement to someone struggling now?</label>
+		    <textarea type="text" class="form-control" id="encouragement" name="encouragement"></textarea> 
 		  </div>
 		</div>
 		<div class="row">
@@ -60,7 +64,7 @@
 		<div class="row">
 		</div>
 		<div class="row formActions">
-  		<button type="submit" class="btn btn-default">Submit</button>
+  		<button type="submit" class="btn btn-default center-block">Submit</button>
 	  </div>
 	</form>
 </div>

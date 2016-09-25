@@ -36,9 +36,30 @@ body {
 	box-shadow: 1px 1px 1px black;
 }
 
+.contact-me-button {
+	margin-bottom: 50px;
+	width: 200px;
+}
+
+.button__cta {
+	background-color: #1ec3ff;
+	color: white;
+	padding: 20px 30px;
+	border-radius: 10px;
+	font-size: 20px;
+	box-shadow: 1px 1px 1px black;
+	border: 1px solid #4f4f4f;
+}
+
+.button__cta:hover {
+	background-color: #00bbff;
+}
+
 .container--header {
-	margin: 0;
-	background-color: grey;
+	margin: 0 auto;
+	background-image: url(http://imgur.com/P9kSotT.jpg);
+	background-size: cover;
+	height: 70vh;
 	width: 100%;
 }
 
@@ -48,8 +69,9 @@ body {
 
 .header--supporters {
 	text-align: center;
-	margin: 50px auto;
+	margin: 20% auto;
 	max-width: 600px;
+	color: white;
 }
 
 .back {
@@ -66,12 +88,36 @@ body {
 }
 
 .container--form {
+	/*width: 60% !important;*/
+	margin: 0 auto;
+	background-color: #f7eff1;
+	padding: 100px;
+}
+
+#createSupporterForm {
+	box-shadow: 1px 1px 1px black;
+	border-radius: 5px;
+}
+
+#contactSupporterForm {
 	width: 60%;
 	margin: 0 auto;
 }
 
+.page-new-supporter {
+	padding: 100px;
+}
+
+.container--modal {
+	padding: 30px;
+}
+
 .image {
 	max-width: 270px;
+}
+
+.profile-info {
+	margin: 0 50px;
 }
 
 .profile-picture {
@@ -87,7 +133,7 @@ body {
 	margin-left: 200px;
 }
 
-.media {
+.media--list-view {
 	box-shadow: 1px 1px 1px black;
 	margin: 25px !important;
 	padding: 10px;
@@ -96,7 +142,28 @@ body {
 	color: white;
 }
 
+.quote {
+	font-weight: 300px !important;
+	font-size: 14px;
+}
 
+.modal-dialog {
+	position: relative;
+	width: auto;
+	margin: 50px;
+}
+
+.modal-content {
+	background-color: #f7eff1;
+}
+
+.modal-dialog h3 {
+	color: #8C8787;
+}
+
+.modal-dialog p {
+	margin-left: 30px;
+}
 
 
 

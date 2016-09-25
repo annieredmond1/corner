@@ -32,6 +32,7 @@ $(document).ready(function() {
 	$(".contact-me-button").on('click', function() {
 		console.log('clicked contact button');
 		$('.profile-info').addClass('hidden');
+		$('.contact-me-button').addClass('hidden');
 		$('.contact-form').removeClass('hidden');
 		$('.back-to-profile').removeClass('hidden');
 
@@ -40,6 +41,7 @@ $(document).ready(function() {
 	$(".back-to-profile").on('click', function() {
 		console.log('clicked back button');
 		$('.profile-info').removeClass('hidden');
+		$('.contact-me-button').removeClass('hidden');
 		$('.contact-form').addClass('hidden');
 		$('.back-to-profile').addClass('hidden');
 	});
