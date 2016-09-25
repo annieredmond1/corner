@@ -1,8 +1,21 @@
-# Prayer Requester, Code for the Kingdom, Bay Area, Nov. 2015 Tractor
+# Corner
 
-Prayer request manager for small Christian groups
+Connecting people who share difficult experiences
+
+##To run:
+```
+clone the project into a local repository
+
+npm install
+
+mongod
+
+nodemon
+
+server will be running on localhost:3000
+```
 
 ## authors & license
 
-Alex Lopes, Annie Redmond, Kaylan Burleigh
+Kevin McFarland, Annie Redmond
 
